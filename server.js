@@ -11,7 +11,7 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var dbUrl = 'mongodb+srv://admin:786mks786@node.n1yfe.mongodb.net/ks?retryWrites=true&w=majority'
+var dbUrl = 'mongodb+srv://admin:<password>@node.n1yfe.mongodb.net/<databaseName>?retryWrites=true&w=majority'
 
 var Message = mongoose.model('Message', {
     name : String,
